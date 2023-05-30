@@ -1,0 +1,126 @@
+.carousel-layout{
+    padding: 50px 0;
+    position: relative;
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-layout-image{
+                    .image-container{
+                        position: relative;
+                        picture{
+                            &:hover{
+                                .image-overlay-box{        
+                                    display: block;
+                                }
+                            }
+                            img{
+                                width: 100%;
+                                @include media-breakpoint-down(md){
+                                    margin-bottom: 30px;
+                                }
+                                @include media-breakpoint-down(sm){
+                                    margin-bottom: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .carousel-text-image-layout{
+                    .image-container{
+                        position: relative;
+                        picture{
+                            &:hover{
+                                .image-overlay-box{        
+                                    display: block;
+                                }
+                            }
+                            img{
+                                width: 100%;
+                               
+                            }
+                        }
+                    }
+                    h5{
+                        font-size: $h5;
+                        color: $black;
+                        font-weight: 300;
+                        line-height: 28px;
+                        margin-top: 20px;
+                    }
+                    .carousel-layout-text-banner-link{
+                        a{
+                            font-weight:600;
+                            color: $black;
+                            opacity: 1;
+                            font-size: $h6;
+                            text-transform: uppercase;    
+                            background-color: transparent;
+                            margin-top: 15px;
+                            position: relative;
+                            top: 20px;
+                            transition: 0.4s;
+                            padding: 10px 0 7px;
+                            letter-spacing: .65px;
+                            line-height: 20px; 
+                            &:hover{
+                                color: $black;
+                                top: 15px;                            
+                            }
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: calc(100% + 3px);
+                                left: 0;
+                                width: 100%;
+                                border-bottom: 1px solid #000000;
+                                transition: 0.4s;    
+                            }
+                            &:hover::after{
+                                top:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-layout-button{
+            position: absolute;
+            right: 0;
+            top: 900px;
+            display: flex;
+            @include media-breakpoint-down(sm){
+                // top: 780px;
+                display: none;
+            }
+            // @include media-breakpoint-down(lg){ 
+            //    top: 500px;
+            //  }
+            .carousel-layout-prev{
+               position: initial;
+                .carousel-control-prev-icon{
+                    margin-right: 30px;
+                     img{
+                        width: 50px;
+                        @include media-breakpoint-down(sm){
+                                width: 40px;
+                            }
+                     }
+                }
+            }
+            .carousel-layout-next{
+                .carousel-control-next-icon{
+                    @include media-breakpoint-down(sm){
+                        margin-right: 45px;
+                    }
+                    img{
+                        width: 50px;
+                        @include media-breakpoint-down(sm){
+                                width: 40px;
+                            }
+                     }
+                }
+            }
+        }
+        
+    }
+}

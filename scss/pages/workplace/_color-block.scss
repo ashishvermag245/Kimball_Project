@@ -1,0 +1,78 @@
+.color-block{
+    padding: 50px 0;
+    background-color: $footer-bg;
+    @include media-breakpoint-down(sm){
+        padding: 30px 0;
+    }
+    .color-block-text{
+        .block-text{
+            h3{text-align: left;
+                font-weight:300;
+                letter-spacing: 0.25px;
+                color: $color-block-text;
+                opacity: 1;
+                font-size: $h3;
+                line-height: 35px;
+                @include media-breakpoint-down(sm){
+                    margin-top: 20px;
+                    font-size: $h5;
+                    line-height: 30px;
+                }
+                strong{
+                    font-weight: 600;
+                }
+            }
+        }
+        .bottom-block-text-banner-link{
+            a{
+                font-weight:600;
+                    color: $color-block-text;
+                    opacity: 1;
+                    font-size: $h6;
+                    text-transform: uppercase;    
+                    background-color: transparent;
+                    margin-top: 15px;
+                    position: relative;
+                    top: 20px;
+                    transition: 0.4s;
+                    padding: 10px 0 7px;
+                    letter-spacing: .65px;
+                    line-height: 20px;
+                    @include media-breakpoint-down(md) {
+                        top: 10px;
+                      }
+                    @include media-breakpoint-down(sm){
+                        top: -10px;
+                        
+                    }
+                    
+                    // border-bottom: 1px solid $text-color;
+                    &:hover{
+                        color: $color-block-text;
+                        top: 15px;
+                    
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: calc(100% + 3px);
+                        left: 0;
+                        width: 100%;
+                        border-bottom: 1px solid $text-color;
+                        transition: 0.4s;
+
+                    }
+                    &:hover::after{
+                        top:0;
+                    }
+            }
+        }
+    }
+    .color-block-image{
+        picture{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

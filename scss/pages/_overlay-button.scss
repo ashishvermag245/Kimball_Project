@@ -1,0 +1,48 @@
+ 
+    picture{
+        .image-overlay-box{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            display: none;
+            .download-icon-button{
+                button{
+                    background-color: transparent;
+                    border: none;
+                    svg{
+                        color: #000;;
+                    }
+                }
+            }
+        }
+        .image-overlay-download{
+            position: absolute;
+            width: 100%;
+            bottom: -95px;
+            left: 0;
+            opacity: 0;
+            .download-box{
+                background: #918787;
+                color: white;
+                padding: 25px 25px;
+                button{
+                    background-color: transparent;
+                    border: none;
+                    display: flex;
+                    gap: 20px;
+                    svg{
+                        color: white;
+                    }
+                    span{
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+ 
+    .show-overlay-download{
+        bottom: 0;
+        opacity:1;
+    }

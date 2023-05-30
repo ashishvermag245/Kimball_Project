@@ -1,0 +1,40 @@
+ *{
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+ }
+ a,li{
+    text-decoration: none;
+    list-style: none;
+    color: $black;
+ }
+
+ $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl:1600px
+);
+
+
+ $black: #000000;
+ $bg-color: #E0E7E7;
+ $text-color: #956839;
+ $layout2-bg: #F7F7F7;
+ $image-block-1:#CDCDC1;
+ $footer-bg:#F5F7F7;
+ $nav-hover:#949494;
+ $workplace-bg:#cdcdc1;
+ $footer-bg:#f0f0ec;
+ $color-block-text:#73630D;
+ $white:#ffffff;
+ $home-footer:#f6f8f8;
+
+ $h1 : 80px;
+ $h2 : 40px;
+ $h3 : 25px;
+ $h4 : 20px;
+ $h5 : 18px;
+ $h6 : 13px

@@ -1,0 +1,104 @@
+.text-layout-4{
+    padding: 100px 0;
+    @include media-breakpoint-down(lg){
+        padding: 50px 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: 50px 0;
+    }
+    .text-layout{
+        .top-text-heading{
+            h1{
+                text-align: left;
+                    font-weight:200;
+                    letter-spacing: 0px;
+                    color: $text-color;
+                    opacity: 1;
+                    font-size: $h1;
+                    line-height: 82px;
+                    padding-bottom: 150px;
+                    @include media-breakpoint-down(lg){
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                     }
+                    @include media-breakpoint-down(md) {
+                        font-size: $h2;
+                        line-height: 50px;
+                        margin-top: 30px;
+                        padding-bottom: 80px;
+                     }
+                    @include media-breakpoint-down(sm) {
+                        font-size: $h2;
+                        line-height: 50px;
+                        margin-top: 30px;
+                        padding-bottom: 15px;
+                    }    
+            }
+        }
+        .bottom-text{
+            .bottom-text-paragraph{
+                h2{
+                    text-align: left;
+                    font-weight:200;
+                    letter-spacing: 0px;
+                    color: $text-color;
+                    opacity: 1;
+                    font-size: $h2;
+                    line-height: 50px;
+                    margin-top: auto;
+                    @include media-breakpoint-down(md){
+                        font-size: $h3;
+                        line-height: 30px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        font-size: $h3;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .bottom-text-banner-link{
+                a{
+                    font-weight:600;
+                    color: $text-color;
+                    opacity: 1;
+                    font-size: $h6;
+                    text-transform: uppercase;    
+                    background-color: transparent;
+                    margin-top: 15px;
+                    position: relative;
+                    top: 20px;
+                    transition: 0.4s;
+                    padding: 10px 0 7px;
+                    letter-spacing: .65px;
+                    line-height: 20px;
+                    @include media-breakpoint-down(md) {
+                        top: 10px;
+                      }
+                    @include media-breakpoint-down(sm){
+                        top: 10px;
+                    }
+                    
+                    // border-bottom: 1px solid $text-color;
+                    &:hover{
+                        color: $text-color;
+                        top: 15px;
+                    
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: calc(100% + 3px);
+                        left: 0;
+                        width: 100%;
+                        border-bottom: 1px solid $text-color;
+                        transition: 0.4s;
+
+                    }
+                    &:hover::after{
+                        top:0;
+                    }
+                }
+            }
+        }
+    }
+}
